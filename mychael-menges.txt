@@ -135,7 +135,20 @@ Semantic HTML is a markup language that adds meaning for the browser to interpre
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    An inline element does not break the flow of a page, where a block element breaks the flow causing that element to start on a new line.
+
+
     2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    It is positioned based on set position coordinates using the top, left, right, and bottom properties.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    By setting the margin to auto and then setting the width to what you need. 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block: <h1>, <p>, <div>
+    inline: <span>, <a>
+    inline-block: <button>
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+    The box model is the concept that an element of HTML is made up of sections that form a kind of box around the content of the element. It is made up of the margins on the outside, then the border, with the padding next, and finally the content inside.
+    The "fix" would be to use the box-sizing property and setting it to border-box. This forces the elements to take into account the border and padding values when setting the width.
